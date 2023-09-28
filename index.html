@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parallel Coordinate Plots</title>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <!-- class and color -->
+        <div class="color-legend">
+            <div class="legend-item">
+                <div class="color-box" style="background-color: red;"></div>
+                <div>Iris-setosa</div>
+            </div>
+            <div class="legend-item">
+                <div class="color-box" style="background-color: green;"></div>
+                <div>Iris-versicolor</div>
+            </div>
+            <div class="legend-item">
+                <div class="color-box" style="background-color: blue;"></div>
+                <div>Iris-virginica</div>
+            </div>
+        </div>
+
+        <!-- select y-axis order -->
+        <div class="color-legend">
+            <label for="order1" class="option-box">Order1:&ensp;</label>
+            <select id="order1">
+                <option value="sepal length">sepal length</option>
+                <option value="sepal width">sepal width</option>
+                <option value="petal length">petal length</option>
+                <option value="petal width">petal width</option>
+            </select>
+            <label for="order2" class="option-box">Order2:&ensp; </label>
+            <select id="order2">
+                <option value="sepal length">sepal length</option>
+                <option value="sepal width">sepal width</option>
+                <option value="petal length">petal length</option>
+                <option value="petal width">petal width</option>
+            </select>
+            <label for="order3" class="option-box">Order3:&ensp; </label>
+            <select id="order3">
+                <option value="sepal length">sepal length</option>
+                <option value="sepal width">sepal width</option>
+                <option value="petal length">petal length</option>
+                <option value="petal width">petal width</option>
+            </select>
+            <label for="order4" class="option-box">Order4:&ensp; </label>
+            <select id="order4">
+                <option value="sepal length">sepal length</option>
+                <option value="sepal width">sepal width</option>
+                <option value="petal length">petal length</option>
+                <option value="petal width">petal width</option>
+            </select>
+            <input type="button" value="Submit" class="option-box" id="option-box">
+        </div>
+        <!-- scatter plots -->
+        <svg class="plot" id="plot"></svg>
+
+        <script src="scatterplot.js"></script>
+    </body>
+</html>

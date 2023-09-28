@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    font: 1em sans-serif;
+}
+.plot {
+    display: flex;
+    justify-content: center;
+    margin: 5% auto;
+}
+.info {
+    display: flex;
+    justify-content: center;
+}
+.color-legend {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.color-box {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.option-box {
+    margin-left: 20px;
+}
+
+.line {
+    fill: none;
+    stroke-width: 1.5px;
+}
+
+.axis {
+    font-weight:bold;
+}
+
+#tooltip {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
